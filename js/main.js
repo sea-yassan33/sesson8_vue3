@@ -14,6 +14,7 @@ const app = Vue.createApp({
   mounted: function(){
     // this.keyword = 'JavaScript'
     // this.getAnswer()
+    // apiの処理を1秒間、間引く（1000ミリ秒＝1秒）
     this.debouncedGetAnswer = _.debounce(this.getAnswer, 1000)
   },
   methods: {
